@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KUKeight - Your Ultimate Safe Space</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('file:///C:/Users/User/Downloads/Telegram%20Desktop/background_KUKeight.jpg');
+            background-size: cover;
+        }
+
+        .container {
+            margin: 20px;
+        }
+
+        .button {
+            padding: 10px 20px;
+            font-size: 16px;
+            text-align: center;
+            cursor: pointer;
+            outline: none;
+            color: #fff;
+            background-color: rgba(51, 51, 51, 0.8);
+            border: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+
+        header {
+            color: white;
+            text-align: center;
+            padding: 60px;
+        }
+
+        nav {
+            background-color: rgba(68, 68, 68, 0.8);
+            overflow: hidden;
+        }
+
+        nav a {
+            float: right;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        section {
+            padding: 20px;
+            color: black;
+            text-align: center;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.6);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        footer {
+            background-color: rgba(51, 51, 51, 0.9);
+            color: white;
+            text-align: center;
+            padding: 5px;
+            bottom: 0;
+            position: fixed;
+            width: 100%;
+			margin-top:2000px;
+		
+        }
+
+        .login-container {
+            padding: 25px;
+            background-color: rgba(68, 68, 68, 0.8);
+            color: white;
+            width: 300px;
+            margin: 0 auto;
+            margin-top: 50px;
+            border-radius: 8px;
+        }
+
+        .login-container label {
+            color: white;
+        }
+
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            width: 100%;
+            margin: 8px 0;
+            padding: 12px 20px;
+            display: inline-block;
+            border: 2px solid green;
+            box-sizing: border-box;
+        }
+
+        .login-container button {
+            
+            width: 100%;
+            color: #fff;
+            padding: 15px;
+            margin: 10px 0;
+            border: none;
+            cursor: pointer;
+        }
+
+        .login-container button:hover {
+            opacity: 0.7;
+        }
+
+        .login-container .cancelbtn {
+            width: auto;
+            padding: 10px 18px;
+            margin: 10px 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="#">Setting</a>
+        <a href="#">Handicrafts</a>
+        <a href="#">Your Profile</a>
+        <a href="#">Menu</a>
+        <a href="file:///C:/Users/User/Documents/KUKeight_HomepageII.html">Home</a>
+    </nav>
+	
+	 <div class="container">
+        <button class="button" onclick="showLoginForm()">Log In</button>
+        <button class="button" onclick="location.href='signin-page'">Sign In</button>
+    </div>
+
+    <div id="loginForm" class="login-container" style="display: none;">
+        <form>
+            <label>Username:</label>
+            <input type="text" placeholder="Enter Username" name="username" required>
+
+            <label>Password:</label>
+            <input type="password" placeholder="Enter Password" name="password" required>
+
+            <button type="submit">Log In</button>
+            <input style="color: white" type="checkbox" checked="checked"> Remember me
+			<br>
+            <button style="color: black" type="button" class="cancelbtn">Cancel</button>
+            Forgot <a style="color: white" href="#">password?</a>
+        </form>
+    </div>
+
+
+    <header>
+        <h1>Explore The Universe - KUKeight</h1>
+    </header>
+
+    <section>
+        <h1 text-align="center">Dear Adventure Enthusiasts, Let's Immerse Yourself!</h1>
+        <p>Be Both Reader and Writer, Express Yourself Now!</p>
+    </section>
+
+
+    <footer>
+        &copy; All rights are reserved by KUKeight 2024
+    </footer>
+
+    <script>
+        function showLoginForm() {
+            document.getElementById("loginForm").style.display = "block";
+        }
+    </script>
+</body>
+
+</html>
